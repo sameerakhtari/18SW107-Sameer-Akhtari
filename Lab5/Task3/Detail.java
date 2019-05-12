@@ -10,7 +10,8 @@ class Detail{
 		breed=s.nextLine();
 		System.out.print("Enter Dog Age: ");
 		age=s.nextLine();
-		Dog o=new Dog(name,breed,age);
+		Dog o=new Dog();
+		o.setDetails(name,breed,age);
 		o.showDetails();
 	}
 }
