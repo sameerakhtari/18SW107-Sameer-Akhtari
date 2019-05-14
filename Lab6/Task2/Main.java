@@ -11,7 +11,7 @@ class Main
 		System.out.print("Enter Author Gender(M/F): ");
 		char gender = s.next().charAt(0);
 
-		System.out.print("Enter Book Name: ");
+		System.out.println("Enter Book Name: ");
 		String bookName=s.nextLine();
 		System.out.print("Enter Book Price: ");
 		double price=s.nextDouble();
@@ -19,7 +19,8 @@ class Main
 		int qty= s.nextInt();
 
 		Author a=new Author(name,email,gender);
-		Book b=new Book(bookName,a,price,qty);
+		Author[] as={a};
+		Book b=new Book(bookName,as,price,qty);
 
 		System.out.println(b.getName());
 		System.out.println(b.getAuthor());
